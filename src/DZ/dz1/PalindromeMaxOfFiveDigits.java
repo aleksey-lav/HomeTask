@@ -44,16 +44,16 @@ public class PalindromeMaxOfFiveDigits {
             }
 
         }
-        for (int i = 0; i < count; i++) {
-            for (int j = 0; j < count; j++) {
-                multiplication = (long) masOfSimpleNumbers[i] * masOfSimpleNumbers[j];
-                if (isPalindrome(multiplication)) {
-                    if(multiplication > maxPalindrom){
-                        maxPalindrom = multiplication;
-                        FirstNumber = masOfSimpleNumbers[i];
-                        SecondNumber = masOfSimpleNumbers[j];
+        for (int i = 0; i <= count; i++) {
+            for (int j = 0; j <= count; j++) {
+                    multiplication = (long) masOfSimpleNumbers[i] * masOfSimpleNumbers[j];
+                    if (isPalindrome(multiplication)) {
+                        if (multiplication > maxPalindrom) {
+                            maxPalindrom = multiplication;
+                            FirstNumber = masOfSimpleNumbers[i];
+                            SecondNumber = masOfSimpleNumbers[j];
+                        }
                     }
-                }
             }
         }
         long finish = System.currentTimeMillis();
