@@ -1,10 +1,8 @@
 package DZ.dz1;
 
-
 import java.util.*;
 
 public class PalindromeMaxOfFiveDigits {
-
 
     public static boolean isPalindrome(Long multiplication) {
 
@@ -16,7 +14,6 @@ public class PalindromeMaxOfFiveDigits {
         }
         return true;
     }
-
     public static boolean isSimple(int number) {
         boolean issimple = true;
         for (int i = 2; i < number; i++) {
@@ -27,7 +24,6 @@ public class PalindromeMaxOfFiveDigits {
         }
         return issimple;
     }
-
     public static void main(String[] args) {
         long multiplication = 0;
         long maxPalindrom = 0;
@@ -42,7 +38,6 @@ public class PalindromeMaxOfFiveDigits {
                 // System.out.print(masOfSimpleNumbers[count] + " ");
                 count++;
             }
-
         }
         for (int i = 0; i <= count; i++) {
             for (int j = 0; j <= count; j++) {
@@ -60,10 +55,8 @@ public class PalindromeMaxOfFiveDigits {
         System.out.println();
         System.out.println(maxPalindrom);
         System.out.println(FirstNumber + " " + SecondNumber);
-        System.out.println("time: " + (finish-start));
-
+        System.out.println("time: " + (finish-start) + " mc");
     }
-
 }
 
 
