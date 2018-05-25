@@ -28,7 +28,8 @@ public class MaxPalindrome {
             for (int j = i; j > 100; j--){
                 multiplication = i * j;
                 if(isPalindrome(multiplication)){
-                    if(multiplication > maxPalindrom){ maxPalindrom = multiplication; }
+                    if(multiplication > maxPalindrom){
+                        maxPalindrom = multiplication; }
                 }
             }
         }
