@@ -6,13 +6,25 @@ public class PalindromeMaxOfFiveDigits {
 
     public static boolean isPalindrome(Long multiplication) {
 
-        String s = multiplication.toString();
+        /*String s = multiplication.toString();
         int lengthStr = s.length();
         for (int i = 0; i < lengthStr; i++) {
             if (s.charAt(i) != s.charAt( (lengthStr - i - 1)))
                 return false;
         }
-        return true;
+        return true;*/
+        long remainder = 0;
+        long sum = 0;
+        long temp = multiplication;
+        while(temp > 0){
+            remainder = temp % 10;  //getting remainder
+            sum = (sum * 10) + remainder;
+            temp = temp / 10;
+        }
+        if(sum == multiplication)
+            return true;
+        else
+            return false;
     }
     public static boolean isSimple(int number) {
         boolean issimple = true;
